@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;900&display=swap');
+@import "tailwindcss";
+@import "tailwindcss-safe-area";
+
+@theme {
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-lg: 18px;
+  --text-lg--line-height: 28px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+  --text-3xl: 30px;
+  --text-3xl--line-height: 36px;
+  --text-4xl: 36px;
+  --text-4xl--line-height: 40px;
+  --text-5xl: 48px;
+  --text-5xl--line-height: 52px;
+  --font-display: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+/* Norg-style dark sport theme: near-black background, one strong accent
+   (default red). The accent is user-switchable — the App root sets
+   --accent / --accent-soft inline from the saved theme color, and every
+   component follows automatically. The page is always dark, like the
+   reference app, in both system modes. */
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0b;
+  --surface: #17171a;
+  --surface-alt: #232329;
+  --text: #f5f5f2;
+  --dim: #a7a7ae;
+  --border: #2d2d33;
+  --accent: #e8323f;
+  --accent-soft: rgba(232, 50, 63, 0.16);
+  --danger: #ff7a5c;
+  --danger-soft: rgba(255, 122, 92, 0.14);
+  --gold: #d9a94f;
+  --radius: 14px;
+  --space-surface: var(--surface);
+  --space-surface-alt: var(--surface-alt);
+  --space-muted: var(--dim);
+  --space-border: var(--border);
+  --space-accent: var(--accent);
+}
